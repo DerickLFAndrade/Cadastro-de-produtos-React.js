@@ -14,7 +14,7 @@ export default function Navbar() {
                     <div className="collapse navbar-collapse" id="navbarColor02">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item active">
-                                <Link className="nav-link" to="/Cadastro-de-produtos-React.js/build/index.html">Página Principal
+                                <Link className="nav-link" to="/index.html">Página Principal
                                     <span className="visually-hidden">(current)</span>
                                 </Link>
                             </li>
