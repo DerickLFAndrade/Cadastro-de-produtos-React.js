@@ -1,0 +1,12 @@
+.titulo {
+    color: rgb(56, 59, 75);
+}
+.container {
+    background: rgb(201, 198, 198);
+    
+}
+.text {
+    font-size: 25px;
+    color: rgb(56, 59, 75);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
