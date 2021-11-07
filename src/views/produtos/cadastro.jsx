@@ -8,7 +8,7 @@ export default function CadastroProduto () {
             Cadastro de Produtos
         </div>
         <div className="card-body">
-                <Link to="/index.html">Voltar</Link>
+                <Link to="/build/index.html">Voltar</Link>
         </div>
         </>
     )
