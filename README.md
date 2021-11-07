@@ -4,4 +4,4 @@
 
 #### Será feito em React.js usando Bootswatch 
 
-Preview: https://dericklfandrade.github.io/build/index.html
+Preview: https://dericklfandrade.github.io/Cadastro-de-produtos-React.js/build/index.html

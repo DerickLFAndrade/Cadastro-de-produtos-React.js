@@ -11,7 +11,7 @@ export default function Home() {
                 <hr className="my-4" />
                
                 <p className="lead">
-                    <Link className="btn btn-primary btn-dark" to="/cadastro-produtos" role="button">Cadastrar</Link>
+                    <Link className="btn btn-primary btn-dark" to="/Cadastro-de-produtos-React.js/build/cadastro-produtos" role="button">Cadastrar</Link>
                 </p>
             </div>
         </>
