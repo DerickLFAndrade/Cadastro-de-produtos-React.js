@@ -8,7 +8,7 @@ import './rotas.css'
 function Rotas() {
     return (
           
-         <>
+     
 
             <Router>
                 <Navbar />
@@ -20,7 +20,7 @@ function Rotas() {
                 </div>
 
             </Router>
-         </>   
+      
         
     )
 }
