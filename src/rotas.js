@@ -15,7 +15,7 @@ function Rotas() {
                 <div className="container">
                     <Routes>
                         <Route element={<Home/>} path="/build/index.html" exact />
-                        <Route element={<CadastroProduto />} path="/buid/cadastro-produtos" exact />
+                        <Route element={<CadastroProduto />} path="/build/cadastro-produtos" exact />
                     </Routes>
                 </div>
 
