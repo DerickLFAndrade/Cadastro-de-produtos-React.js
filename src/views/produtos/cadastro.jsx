@@ -2,7 +2,11 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 export default function CadastroProduto () {
-    let [nome, setNome] = useState("jarbas");
+    let [nome, setNome] = useState("");
+    let [SKU, setSKU] = useState("");
+    let [descricao, setDescricao] = useState("");
+    let [preco, setPreco] = useState("");
+    let [fornecedor, setFornecedor] = useState("");
     const nomeProd = (e) => {
         setNome = e.target.value;
     }
@@ -20,14 +24,14 @@ export default function CadastroProduto () {
                 <div className="col-md-6">
                     <div className="form-group">
                         <label>Nome:*</label>
-                        <input type="text" className="form-control" onChange={nomeProd} />
+                        <input type="text" className="form-control" onChange={nomeProd} value={nome} />
                     </div>
                     </div>
 
                         <div className="col-md-6">
                             <div className="form-group">
                                 <label>SKU: *</label>
-                                <input type="text" className="form-control" />
+                                <input type="text" className="form-control" value={SKU} />
                             </div>
                         </div>
                 </div>
@@ -37,7 +41,7 @@ export default function CadastroProduto () {
                     <div className="col-md-12">
                         <div className="form-group">
                             <label>Descrição:</label>
-                            <textarea className="form-control" />
+                            <textarea className="form-control" value={descricao}/>
                         </div>
                     </div>
                 </div>
@@ -47,14 +51,14 @@ export default function CadastroProduto () {
                     <div className="col-md-6">
                         <div className="form-group">
                             <label>Preço:*</label>
-                            <input type="text" className="form-control" />
+                            <input type="text" className="form-control" value={preco}/>
                         </div>
                     </div>
 
                     <div className="col-md-6">
                         <div className="form-group">
                             <label>Fornecedor: *</label>
-                            <input type="text" className="form-control" />
+                            <input type="text" className="form-control" value={fornecedor} />
                         </div>
                     </div>
                 </div>
