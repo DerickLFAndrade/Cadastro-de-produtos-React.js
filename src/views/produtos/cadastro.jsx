@@ -1,6 +1,12 @@
 import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 export default function CadastroProduto () {
+    let [nome, setNome] = useState("jarbas");
+    const nomeProd = (e) => {
+        setNome = e.target.value;
+    }
+ 
     return (
         <>
         <div className="card">
@@ -14,7 +20,7 @@ export default function CadastroProduto () {
                 <div className="col-md-6">
                     <div className="form-group">
                         <label>Nome:*</label>
-                        <input type="text" className="form-control" />
+                        <input type="text" className="form-control" onChange={nomeProd} />
                     </div>
                     </div>
 
