@@ -12,6 +12,10 @@ export default function CadastroProduto () {
         const nomeCampo = e.target.name;
         setDescricao = e.target.value;
     }
+    onsubmit = (e) => {
+        e.preventDefault();
+        console.log('enviou')
+    }
  
     return (
         <>
@@ -21,60 +25,55 @@ export default function CadastroProduto () {
         </div>
         <div className="card-body">
 
-            <div className="row">
-
-                <div className="col-md-6">
-                    <div className="form-group">
-                        <label>Nome:*</label>
-                        <input type="text" className="form-control" onChange={chamar} name={nome} />
+            <form >
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="form-group">
+                            <label>Nome:*</label>
+                            <input type="text" className="form-control" onChange={chamar} name={nome} />
+                        </div>
+                        </div>
+                            <div className="col-md-6">
+                                <div className="form-group">
+                                    <label>SKU: *</label>
+                                    <input type="text" className="form-control" name={SKU} onChange={chamar}/>
+                                </div>
+                            </div>
                     </div>
-                    </div>
-
-                        <div className="col-md-6">
+                        <div className="row" style={{ marginTop: '10px' }}>
+                        <div className="col-md-12">
                             <div className="form-group">
-                                <label>SKU: *</label>
-                                <input type="text" className="form-control" name={SKU} onChange={chamar}/>
+                                <label>Descrição:</label>
+                                    <textarea className="form-control" name={descricao} onChange={chamar}/>
                             </div>
                         </div>
-                </div>
-
-                    <div className="row" style={{ marginTop: '10px' }}>
-
-                    <div className="col-md-12">
-                        <div className="form-group">
-                            <label>Descrição:</label>
-                                <textarea className="form-control" name={descricao} onChange={chamar}/>
+                    </div>
+                        <div className="row" style={{ marginTop: '10px' }}>
+                        <div className="col-md-6">
+                            <div className="form-group">
+                                <label>Preço:*</label>
+                                    <input type="text" className="form-control" name={preco} onChange={chamar}/>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="form-group">
+                                <label>Fornecedor: *</label>
+                                    <input type="text" className="form-control" name={fornecedor} onChange={chamar} />
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                    <div className="row" style={{ marginTop: '10px' }}>
-
-                    <div className="col-md-6">
-                        <div className="form-group">
-                            <label>Preço:*</label>
-                                <input type="text" className="form-control" name={preco} onChange={chamar}/>
+                        <div className="row" style={{ marginTop: '10px' }}>
+                        <div className="col-md-1">
+                            <button className="btn btn-success" onClick={onsubmit}>Salvar</button>
+                        </div>
+                        <div className="col-md-1"  >
+                            <button className="btn btn-primary">Limpar</button>
                         </div>
                     </div>
 
-                    <div className="col-md-6">
-                        <div className="form-group">
-                            <label>Fornecedor: *</label>
-                                <input type="text" className="form-control" name={fornecedor} onChange={chamar} />
-                        </div>
-                    </div>
+                    </form>
                 </div>
-
-                    <div className="row" style={{ marginTop: '10px' }}>
-                    <div className="col-md-1">
-                        <button className="btn btn-success" onClick={onsubmit}>Salvar</button>
-                    </div>
-                    <div className="col-md-1"  >
-                        <button className="btn btn-primary">Limpar</button>
-                    </div>
-                </div>
-
-            </div>
+           
 
             </div>
         </>
